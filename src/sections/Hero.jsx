@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 
-import Hackerroom from "../components/Hackerroom";
+
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { PerspectiveCamera } from "@react-three/drei";
@@ -13,6 +13,7 @@ import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
+import HackerRoom from "../components/Hackerroom";
 
 function Hero() {
 
@@ -37,7 +38,7 @@ function Hero() {
                         <Suspense fallback={<CanvasLoader />}>
                             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
                             <HeroCamera isMobile={isMobile}>
-                                <Hackerroom
+                                <HackerRoom
                                     scale={sizes.deskScale}
                                     position={sizes.deskPosition}
                                     rotation={[0, -3.1, 0]}
