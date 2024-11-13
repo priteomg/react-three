@@ -4,7 +4,7 @@ import Hackerroom from "../components/Hackerroom";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { PerspectiveCamera } from "@react-three/drei";
-import { Leva, useControls } from "leva";
+
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants/index";
 import Target from "../components/Target";
@@ -15,42 +15,7 @@ import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 
 function Hero() {
-    //     positionX: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     positionY: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     positionZ: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     rotationX: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     rotationY: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     rotationZ: {
-    //         value: 2.5,
-    //         min: -10,
-    //         max: 10,
-    //     },
-    //     scale: {
-    //         value: 0.07,
-    //         min: 0.01,
-    //         max: 0.5,
-    //     },
-    // });
+
 
     const isSmall = useMediaQuery({ maxWidth: 440 });
     const isMobile = useMediaQuery({ maxWidth: 768 });
