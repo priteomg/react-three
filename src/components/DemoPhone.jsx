@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/iphone-16-pro-max-41a071ae12794b668502f5
 Title: iPhone 16 Pro Max
 */
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGLTF, useVideoTexture } from "@react-three/drei";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -21,7 +21,7 @@ const DemoPhone = (props) => {
 
     useEffect(() => {
         if (txt) {
-            txt.flipY = false
+            txt.flipY = false;
         }
     }, [txt]);
 
@@ -31,12 +31,16 @@ const DemoPhone = (props) => {
             duration: 1,
             ease: "power3.Out",
         });
-
-
     }, [txt]);
 
     return (
-        <group {...props} dispose={null} ref={group} position={[0, 0, 0]} scale={0.2}>
+        <group
+            {...props}
+            dispose={null}
+            ref={group}
+            position={[0, 0, 0]}
+            scale={0.2}
+        >
             <group rotation={[-Math.PI / 2, 0, 0]}>
                 <group rotation={[Math.PI / 2, 0, 0]}>
                     <mesh
@@ -50,10 +54,7 @@ const DemoPhone = (props) => {
                         receiveShadow
                         geometry={nodes.Object_14.geometry}
                         material={materials["8ed052ed6d3cd71ab5e3"]}
-                    >
-
-
-                    </mesh>
+                    ></mesh>
                     <mesh
                         castShadow
                         receiveShadow
@@ -67,7 +68,6 @@ const DemoPhone = (props) => {
                         material={materials["4130c6244c49c5d5712e"]}
                     >
                         <meshBasicMaterial map={txt} />
-
                     </mesh>
                     <mesh
                         castShadow
@@ -177,15 +177,13 @@ const DemoPhone = (props) => {
                         geometry={nodes.Object_57.geometry}
                         material={materials["82823ff934002f16e6e0"]}
                         position={[0, 0, 0.037]}
-                    >
-                    </mesh>
+                    ></mesh>
                     <mesh
                         castShadow
                         receiveShadow
                         geometry={nodes.Object_59.geometry}
                         material={materials.b4ad12de1fcbdd61166e}
-                    >
-                    </mesh>
+                    ></mesh>
                     <mesh
                         castShadow
                         receiveShadow
@@ -293,9 +291,7 @@ const DemoPhone = (props) => {
                         receiveShadow
                         geometry={nodes.Object_100.geometry}
                         material={materials.a86dab30a71ca989ac8c}
-                    >
-
-                    </mesh>
+                    ></mesh>
                 </group>
             </group>
         </group>

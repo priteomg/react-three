@@ -47,13 +47,13 @@ const About = () => {
                             </p>
                             <br />
                             <p className="grid-subtext">
-                                I also looking for learning new things Vue.js, Flutter, etc.
+                                I also looking for learning new things new tech like Vue.js, Flutter, etc.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="col-span-1 xl:row-span-4">
+                <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
                         <div className="rounded-3xl w-full xl:h-[326px] h-fit flex flex-col">
                             <p className="grid-headtext">Tech Stack Experienced</p>
@@ -82,7 +82,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-2 xl:row-span-3">
+                <div className="xl:col-span-2 xl:row-span-2">
                     <div className="grid-container">
                         <img
                             className="w-full sm:h-[266px] h-fit object-contain"
